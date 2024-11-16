@@ -16,22 +16,14 @@
         color: #fff;
         padding: 20px 0;
         text-align: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
       }
       .header h1 {
         margin: 0;
         font-size: 2.5em;
-      }
-      .main-content {
-        padding: 20px;
-        text-align: center;
-      }
-      .main-content h2 {
-        font-size: 2em;
-        margin-bottom: 20px;
-      }
-      .main-content p {
-        font-size: 1.2em;
-        margin-bottom: 20px;
       }
       .cta-button {
         background-color: #007bff;
@@ -52,6 +44,11 @@
         position: fixed;
         width: 100%;
         bottom: 0;
+        z-index: 1000;
+      }
+      .content {
+        padding-top: 80px; /* Adjust based on header height */
+        padding-bottom: 40px; /* Adjust based on footer height */
       }
     </style>
   </head>
@@ -60,12 +57,146 @@
       <h1>Welcome to TradeMaster</h1>
     </div>
 
-    <div class="main-content">
-      <h2>Your Gateway to Financial Freedom</h2>
-      <p>Join us to get the best trading insights and financial advice.</p>
-      <a href="#" class="cta-button">Get Started</a>
-    </div>
+    <div class="content">
+      <!-- Your content goes here -->
+      <section
+        style="
+          background-image: url('./imgs/bg.jpg');
+          background-size: cover;
+          background-position: center;
+          padding: 100px 20px;
+          color: #fff;
+          text-align: center;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        "
+      >
+        <h1>Welcome to <b>TradeMaster</b></h1>
+        <h3>@here markets meet community power.</h3>
+        <p>
+          We’re your go-to source for financial news, daily trading data, and
+          cutting-edge open-source trading tools designed to reduce risk and
+          eliminate human error. Led by a passionate community of traders,
+          TradeMaster exists to democratize the market, empowering individuals
+          to shape its future—free from the grip of third-party interests.
+          Together, we’re building a trading ecosystem that works for the
+          people, by the people.
+        </p>
+      </section>
 
+      <section
+        style="
+          background-color: #fff;
+          padding: 50px 20px;
+          text-align: center;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          margin: 20px auto;
+          max-width: 800px;
+          border-radius: 10px;
+          background-image: url('./imgs/code.jpg');
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <h2 style="color: #ffffff; font-size: 2em; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+          Check out our GitHub Repository
+        </h2>
+        <p style="color: #666; font-size: 1.2em; margin-bottom: 30px"></p>
+          Explore our open-source projects, contribute, and join our community
+          of developers.
+        </p>
+        <a
+          href="https://github.com/TradeMaster-Official"
+          class="cta-button"
+          style="
+        background-color: #28a745;
+        color: #fff;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        transition: background-color 0.3s ease;
+          "
+          >Visit our GitHub</a
+        >
+      </section>
+
+      <section
+        style="
+          background-color: #f9f9f9;
+          padding: 50px 20px;
+          text-align: justify;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          margin: 20px auto;
+          max-width: 800px;
+          border-radius: 10px;
+        "
+      >
+        <h2 style="color: #333; font-size: 2em; margin-bottom: 20px;">
+          How Our Tools Are Developed
+        </h2>
+        <p style="color: #666; font-size: 1.2em; margin-bottom: 30px;">
+          At <b>TradeMaster</b>, our tools are <b>open-source</b>—created for the community, by the community.
+        </p>
+        <p style="color: #666; font-size: 1.2em; margin-bottom: 30px;">
+          We believe that the best trading solutions come from those who understand the challenges firsthand. That’s why our tools are designed to evolve through collaboration, with traders from all backgrounds contributing to fill gaps and address real needs. Together, we’re building a comprehensive suite of resources that empower everyone to navigate markets with confidence and clarity.
+        </p>
+      </section>
+
+      <section
+        style="
+          background-color: #fff;
+          padding: 50px 20px;
+          text-align: center;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          margin: 20px auto;
+          max-width: 800px;
+          border-radius: 10px;
+        "
+      >
+        <h2 style="color: #333; font-size: 2em; margin-bottom: 20px;">
+          Follow Us on Social Media
+        </h2>
+        <div style="display: flex; justify-content: center; gap: 20px;">
+          <a
+            href="https://t.me/trademaster_fi_newsletter"
+            style="
+              display: block;
+              width: 150px;
+              padding: 20px;
+              background-color: #0088cc;
+              color: #fff;
+              text-decoration: none;
+              border-radius: 10px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              transition: transform 0.3s ease;
+            "
+            onmouseover="this.style.transform='scale(1.05)'"
+            onmouseout="this.style.transform='scale(1)'"
+          >
+            <p style="margin: 0; font-size: 1.2em;">Telegram</p>
+          </a>
+          <a
+            href="https://www.instagram.com/trademaster_fi/"
+            style="
+              display: block;
+              width: 150px;
+              padding: 20px;
+              background-color: #e4405f;
+              color: #fff;
+              text-decoration: none;
+              border-radius: 10px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              transition: transform 0.3s ease;
+            "
+            onmouseover="this.style.transform='scale(1.05)'"
+            onmouseout="this.style.transform='scale(1)'"
+          >
+            <p style="margin: 0; font-size: 1.2em;">Instagram</p>
+          </a>
+        </div>
+      </section>
+
+    <br /><br /><br /><br />
     <div class="footer">
       <p>&copy; 2024 TradeMaster. All rights reserved.</p>
     </div>
